@@ -1,27 +1,33 @@
-<!DOCTYPE HTML>
-<html lang = "ru">
-	<head>
-		<meta charset = "UTF-8">
-		</head>
-<body>
+<!DOCTYPE html>
+<html lang="ru">
 
-  <script>
-    "use strict";
-    let n = prompt('Введите кол-во строк');
-    let x;
-    for (let i = 0; i < n; i++) {
-      let text = '';
-      for (let j = 0; j < 6; j++) {
-        if (((i * 6 + j) % 5 == 0) || ((i * 6 + j) % 5 == 1) || ((i * 6 + j) % 5 == 2))
-          x = 'dog';
-        else
-          x = 'cat';
-        text += x + ' ';
-      }
-      console.log(text);
-    }
-  </script>
-
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ЛАБА 1_5</title>
+</head>
+    <body>
+      <script>
+    'use strict';
+       let n = prompt("Сколько нужно строк?");
+       let x = new Array(n);
+           for(let i = 0; i < n; i++){
+                x[i] = new Array(6);
+                }
+            for (let i = 0; i<n;i++)
+                {
+                    let text = '';
+                    for (let j=0;j<6;j++)
+                    {
+                        if(((i*6+j)%5==0)||((i*6+j)%5==1)||((i*6+j)%5==2))
+                            x[i][j]='dog';
+                        else 
+                            x[i][j]='cat';
+                        text+=x[i][j]+' ';
+                    }
+                    console.log(text);
+                }
+    </script>
 </body>
-
 </html>
