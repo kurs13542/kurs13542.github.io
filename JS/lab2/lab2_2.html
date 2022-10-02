@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html lang="ru">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лаба 2_2</title>
+    <script src="lab2.js"></script>
+</head>
+
 <body>
-    <script src='lab2.js'></script>
     <script>
         'use strict'
-        let n = prompt('Введите n');
-        let y = sumTo(n);
-        alert(`Сумма натуральный чисел от 1 до ${n} = ${y}`);
+        let n = prompt("Введите n:");
+
+        if (n <= 0) {
+            alert("Число должно быть натуральным!");
+        } else {
+            alert(sumTo(n));
+        }
     </script>
 </body>
-
-</html>
