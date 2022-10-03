@@ -1,33 +1,24 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лаба 5_1</title>
 </head>
-
 <body>
     <div>Пользователи:</div>
-    <ul>
-        <li>Маша</li>
-        <li>Вовочка</li>
-    </ul>
-
+        <ul>
+            <li>Маша</li>
+            <li>Вовочка</li>
+        </ul>
     <script>
+        'use strict'
+
         console.log(document.head);
-        console.log(document.head.innerHTML);
-
-        console.log(document.querySelector("ul"));
-        console.log(document.querySelector("ul").innerHTML);
-
-        console.log(document.querySelector("li"));
-        console.log(document.querySelector("li").innerHTML);
-
-        let elemLi = document.querySelectorAll("li");
-        console.log(elemLi);
-
-        for (let i = 0; i < elemLi.length; i++)
-            console.log(elemLi[i].innerHTML);
+        console.log(document.body.children[1]);
+        console.log(document.body.children[1].lastElementChild);  
+        console.log(document.body.children[1].firstElementChild);
     </script>
 </body>
-
 </html>
